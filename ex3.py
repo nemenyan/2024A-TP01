@@ -2,10 +2,9 @@
 # TODO: Importer les modules nécessaires.
 import math
 
-speed = float(input("Quelle est la vitesse initiale de la boule en m/s?"))
-angle = float(input("Quel est l'angle de lancement en degrés?"))
+speed = float(input("Vitesse initiale (m/s): "))
+angle = float(input("Angle de lancer (en degrés): "))
 g= 9.80
 distance = (pow(speed,2) * math.sin(2*math.radians(angle)))/g
-print(distance)
 arrondid = round(distance,2)
-print("La distance maximale en x est de ", arrondid,  " m")
+print(f"Distance parcourue: {arrondid}m")
